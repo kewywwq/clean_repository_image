@@ -68,12 +68,12 @@ def registry_gc():
 
 if __name__ == "__main__":
     count = sys.argv.__len__()
-    if count == 1:
+    if count == 2:
         clean_all()
-    elif count == 2:
-        clean_repo(sys.argv[1])
     elif count == 3:
-        clean_repo_tag(sys.argv[1], sys.argv[2])
+        clean_repo(sys.argv[2])
+    elif count == 4:
+        clean_repo_tag(sys.argv[2], sys.argv[3])
     else:
         print "parameters are invalid."
     registry_gc()

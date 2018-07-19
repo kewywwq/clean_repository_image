@@ -1,0 +1,1 @@
+# clean_repository_image
